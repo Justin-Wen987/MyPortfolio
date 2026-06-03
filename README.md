@@ -5,10 +5,6 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-222222?logo=github)](https://pages.github.com/)
 
-**Personal portfolio website** – showcasing interactive web applications, game design, and front‑end development work.
-
-> Built with semantic HTML, modular CSS, and vanilla JavaScript. Features silent MP4 demos, responsive layout, and a clean project gallery.
-
 ---
 
 ## 🧑‍💻 About Me
