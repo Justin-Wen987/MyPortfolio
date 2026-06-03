@@ -21,8 +21,6 @@ I'm a Digital Narrative & Interactive Design student at the University of Pittsb
 | **Forgotten Things** | Seven‑key browser rhythm game with real‑time timing judgment, combo system, and adjustable speed. | JavaScript, HTML/CSS |
 | **Peter Pan: Escape from Neverland** | 2D platformer with boss AI, multi‑pattern cannonball attacks, and rescue mechanics. Built in Unity with C#. | Unity, C# |
 
-Each project includes a silent autoplay demo video, GitHub link, and live demo where applicable.
-
 ---
 
 ## 🛠️ Skills
