@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Changyu Wen · Portfolio</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <nav>
+        <div class="logo"><a href="#">CHANGYU WEN</a></div>
+        <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">✦ interactive systems / front-end</div>
+            <h1>Building <span class="hero-highlight">playful</span> digital experiences <br>with code & design</h1>
+            <p class="hero-desc">I'm Changyu Wen — a designer & developer crafting browser‑based applications, rhythm games, and gamified tools. I bridge interaction design with robust front‑end engineering.</p>
+            <div class="btn-group">
+                <a href="#work" class="btn btn-primary"><i class="fas fa-arrow-down"></i> View projects</a>
+                <a href="#contact" class="btn btn-outline"><i class="far fa-envelope"></i> Contact</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <i class="fab fa-js tech-icon"></i>
+            <i class="fab fa-unity tech-icon"></i>
+            <i class="fab fa-html5 tech-icon"></i>
+            <i class="fab fa-css3-alt tech-icon"></i>
+            <p>JavaScript · Unity · C# · HTML/CSS</p>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2 class="section-title">About</h2>
+        <div style="max-width: 780px;">
+            <p style="font-size: 1.1rem; margin-bottom: 20px;">I'm a Digital Narrative & Interactive Design student at the University of Pittsburgh (expected Dec 2026, GPA 3.6). I specialize in building interactive web applications, gameplay systems, and user-centered prototypes — from gamified productivity tools to browser rhythm games.</p>
+            <p>I combine front‑end development (JavaScript, HTML/CSS, localStorage, event‑driven UI) with game design principles to create meaningful digital experiences. Through playtesting and iterative design, I turn ambiguous concepts into polished, deployable products. I'm currently seeking internship opportunities in front‑end engineering, interactive media, or UI development.</p>
+        </div>
+    </section>
+
+    <section id="work">
+        <h2 class="section-title">Featured projects</h2>
+        <div class="projects-grid">
+            <!-- PomoPet -->
+            <div class="project-card">
+                <div class="card-content">
+                    <div class="project-icon"><i class="fas fa-paw"></i></div>
+                    <div class="project-title">PomoPet</div>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5/CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">localStorage</span>
+                        <span class="tech-tag">GitHub Pages</span>
+                    </div>
+                    <video class="project-video" autoplay loop muted playsinline loading="lazy">
+                        <source src="gif/PomoPet.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="project-desc">
+                        Gamified Pomodoro web app combining focus timer, task tracking, token economy, weighted gacha (75/20/5), pet collection, and duplicate recycling. Fully persistent user progression.
+                    </div>
+                    <ul style="margin: 8px 0 0 20px; color:#2e445e; font-size:0.85rem;">
+                        <li>Designed client-side state architecture with localStorage</li>
+                        <li>Implemented flip‑clock animation, audio ducking, and shop mechanics</li>
+                        <li>Independently built & deployed to GitHub Pages</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/justin-wen987/PomoPet" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://justin-wen987.github.io/PomoPet" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forgotten Things -->
+            <div class="project-card">
+                <div class="card-content">
+                    <div class="project-icon"><i class="fas fa-music"></i></div>
+                    <div class="project-title">Forgotten Things</div>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">Rhythm Game</span>
+                        <span class="tech-tag">GitHub Pages</span>
+                    </div>
+                    <video class="project-video" autoplay loop muted playsinline loading="lazy">
+                        <source src="gif/ForgottenThings.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="project-desc">
+                        Seven‑key browser rhythm game with real‑time timing judgment, combo system, variable note speed, and responsive hit feedback. Built from scratch using vanilla JS.
+                    </div>
+                    <ul style="margin: 8px 0 0 20px; color:#2e445e; font-size:0.85rem;">
+                        <li>Engineered latency‑sensitive scoring (Perfect &lt;100ms, Good 100-200ms)</li>
+                        <li>Iterated through playtesting: removed mouse input → 7 lanes (SDF␣JKL)</li>
+                        <li>Added control guide, adjustable scroll speed (1x–3x)</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/justin-wen987/Forgotten-Things" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://justin-wen987.github.io/Forgotten-Things" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Peter Pan -->
+            <div class="project-card">
+                <div class="card-content">
+                    <div class="project-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="project-title">Peter Pan: Escape from Neverland</div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Game AI</span>
+                        <span class="tech-tag">2D Platformer</span>
+                    </div>
+                    <video class="project-video" autoplay loop muted playsinline loading="lazy">
+                        <source src="gif/PeterPan.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="project-desc">
+                        2D side‑scroller where Peter Pan chases Captain Hook & rescues Wendy. Designed boss fight, multi‑pattern cannon AI, and rescue mechanics.
+                    </div>
+                    <ul style="margin: 8px 0 0 20px; color:#2e445e; font-size:0.85rem;">
+                        <li>Co‑developed core gameplay: collision, HUD, invincibility frames, scene transitions</li>
+                        <li>Balanced boss pacing using playtest feedback from 10+ users</li>
+                        <li>Implemented Hook's cannonball AI, fairy dust progression, and Wendy interaction</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/chris-makes-games/PeterPanProject" target="_blank"><i class="fab fa-github"></i> GitHub (Team)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="insight-card">
+            <i class="fas fa-lightbulb"></i> <strong>Design insight — Forgotten Things playtesting</strong>
+            <p style="margin-top: 12px;">Initial version used mouse + keyboard + laser traces → cognitive overload. Through think‑aloud testing, I removed mouse input, reduced note types to tap‑only, expanded lanes from 3 to 7, and added clear control guidance. Result: focused, playable rhythm experience with improved accessibility & flow.</p>
+            <div style="margin-top: 12px; font-family: monospace; font-size:0.8rem;">✓ Perfect &lt;100ms &nbsp;|&nbsp; Good 100-200ms &nbsp;|&nbsp; combo multiplier logic</div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills & tools</h2>
+        <div class="skills-wrapper">
+            <div class="skill-category">
+                <h3>Front‑end</h3>
+                <div class="skill-list">
+                    <span class="skill-item">HTML5/CSS3</span>
+                    <span class="skill-item">JavaScript (ES6+)</span>
+                    <span class="skill-item">DOM Manipulation</span>
+                    <span class="skill-item">localStorage</span>
+                    <span class="skill-item">Responsive Design</span>
+                    <span class="skill-item">Event‑driven UI</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Game / Interactive</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Unity (C#)</span>
+                    <span class="skill-item">Gameplay Systems</span>
+                    <span class="skill-item">Enemy AI</span>
+                    <span class="skill-item">Rhythm Mechanics</span>
+                    <span class="skill-item">Playtesting & Tuning</span>
+                    <span class="skill-item">Gamification Design</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Workflow</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Git / GitHub</span>
+                    <span class="skill-item">GitHub Pages</span>
+                    <span class="skill-item">VS Code</span>
+                    <span class="skill-item">Chrome DevTools</span>
+                    <span class="skill-item">Figma</span>
+                    <span class="skill-item">Pixel art / Assets</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding-bottom: 20px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; background: #f6f8fa; border-radius: 32px; padding: 28px 24px;">
+            <div style="flex: 1;">
+                <h3 style="font-size: 1.4rem; margin-bottom: 12px;"><i class="fas fa-file-alt" style="margin-right: 8px; color: var(--accent);"></i> Process & documentation</h3>
+                <p style="color: #2e5a77;">I value design rationale and user feedback. Each project includes:<br> 
+                → Game Design Document (GDD)<br>
+                → Playtest reports & iterative redesign<br>
+                → Version evolution (V1 mouse/laser → V2 keyboard only)<br>
+                → Modular code architecture & state persistence</p>
+            </div>
+            <div style="flex: 1;">
+                <h3 style="font-size: 1.4rem; margin-bottom: 12px;"><i class="fas fa-chart-line"></i> Impact highlights</h3>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 12px;">✓ PomoPet: live user retention via gamification loop (gacha + recycling)</li>
+                    <li style="margin-bottom: 12px;">✓ Forgotten Things: reduced input confusion → 100% keyboard, expanded 7 lanes</li>
+                    <li>✓ Peter Pan: improved objective clarity & boss readability after playtesting</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="border-bottom: none; padding-bottom: 20px;">
+        <h2 class="section-title">Connect</h2>
+        <div class="contact-flex">
+            <div>
+                <p style="font-size: 1.1rem;">📧 justin.wen316@gmail.com</p>
+                <p style="margin-top: 8px;">📍 Pittsburgh, PA</p>
+                <div class="contact-links" style="margin-top: 20px;">
+                    <a href="https://github.com/justin-wen987" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/changyu-wen" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:justin.wen316@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Changyu Wen</p>
+    </footer>
+</div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
