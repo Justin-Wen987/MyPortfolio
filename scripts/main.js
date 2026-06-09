@@ -12,5 +12,4 @@ document.querySelectorAll('.nav-links a, .btn-primary[href="#work"], .btn-outlin
     });
 });
 
-// Console log
-console.log("Portfolio with MP4 demos loaded.");
+console.log("Portfolio with case-study structure and enhanced interactive positioning loaded.");
