@@ -181,3 +181,21 @@ body:has(dialog[open]){overflow:hidden}
 @media(hover:hover){a:hover{color:var(--accent)}.about-home a:hover,.case-notes a:hover{color:#285867}.preview-controls button:hover,.copy-email:hover{background:var(--panel);color:var(--ink)}.button:hover,.dialog-close:hover{background:var(--accent);border-color:var(--accent);color:#102f39}.card-still:hover{outline:2px solid var(--accent);outline-offset:5px}}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}a,button{transition:color 150ms,background-color 150ms,border-color 150ms}}
 @media(forced-colors:active){.button,.dialog-close,.preview-controls button{border:1px solid ButtonText}:focus-visible{outline-color:Highlight}}
+
+.document-actions{display:flex;flex-wrap:wrap;gap:12px;margin-block-start:16px}
+.document-actions a{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-block-size:44px;padding:10px 14px;border:1px solid var(--muted);color:var(--ink);font-size:.85rem;font-weight:550;line-height:1.4;text-decoration:none}
+.document-actions svg{inline-size:18px;block-size:18px}
+.wordmark{gap:8px}.wordmark svg{inline-size:18px;block-size:18px}
+@media(hover:hover){.document-actions a:hover{background:var(--panel);border-color:var(--accent);color:var(--ink)}}
+
+.header-tools{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 16px;inline-size:100%}
+.language-switch{gap:0;border:1px solid var(--line)}
+.language-switch a{justify-content:center;min-inline-size:44px;min-block-size:44px;padding:8px 10px;font-size:.8rem}
+.language-switch a[aria-current="true"]{background:var(--accent);color:var(--paper)}
+html:lang(zh-CN){--font-body:Inter,'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif;--font-display:'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif}
+html:lang(zh-CN) h1,html:lang(zh-CN) h2,html:lang(zh-CN) h3{letter-spacing:0;line-height:1.3}
+html:lang(zh-CN) .opening-title h1{font-size:clamp(2.6rem,5vw,3.6rem)}
+html:lang(zh-CN) h2{font-size:clamp(2rem,4.5vw,3rem)}
+html:lang(zh-CN) .card-copy h3{font-family:var(--font-body);font-size:clamp(1.8rem,3.2vw,2.6rem)}
+html:lang(zh-CN) p,html:lang(zh-CN) dd{line-height:1.85;text-wrap:pretty}
+@media(min-width:640px){.header-tools{inline-size:auto}}

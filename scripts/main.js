@@ -1,3 +1,4 @@
+const t = window.portfolioI18n.t;
 const previews = [...document.querySelectorAll('.loop-preview')];
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const dialog = document.querySelector('#video-dialog');
@@ -15,8 +16,8 @@ function updatePreview(video) {
   const playing = !video.paused;
   const project = video.dataset.project || 'Project';
   button.classList.toggle('is-playing', playing);
-  button.querySelector('span').textContent = playing ? 'Pause preview' : 'Play preview';
-  button.setAttribute('aria-label', `${playing ? 'Pause' : 'Play'} preview: ${project}`);
+  button.querySelector('span').textContent = playing ? t('Pause preview') : t('Play preview');
+  button.setAttribute('aria-label', t(`${playing ? 'Pause' : 'Play'} preview: ${project}`));
 }
 
 function loadPreview(video) {
@@ -54,7 +55,7 @@ previews.forEach(video => {
   video.addEventListener('play', () => updatePreview(video));
   video.addEventListener('pause', () => updatePreview(video));
   video.addEventListener('error', () => {
-    video.closest('.preview').querySelector('.media-status').textContent = 'Preview unavailable. You can still open the full video.';
+    video.closest('.preview').querySelector('.media-status').textContent = t('Preview unavailable. You can still open the full video.');
   });
   video.closest('.preview').querySelector('.preview-toggle').addEventListener('click', () => {
     if (video.paused) {
@@ -87,7 +88,7 @@ document.querySelectorAll('[data-watch]').forEach(button => {
 });
 
 fullVideo.addEventListener('error', () => {
-  videoStatus.textContent = 'Video could not be loaded. Try opening it directly using the link below.';
+  videoStatus.textContent = t('Video could not be loaded. Try opening it directly using the link below.');
   videoStatus.hidden = false;
 });
 
@@ -107,14 +108,14 @@ document.querySelectorAll('main [data-image]').forEach(link => {
     imageTrigger = link;
     const sourceImage = link.querySelector('img');
     const project = link.closest('article')?.querySelector('h1, h3')?.textContent || 'Project';
-    document.querySelector('#image-dialog-title').textContent = `${project} screenshot`;
+    document.querySelector('#image-dialog-title').textContent = t(`${project} screenshot`);
     enlargedImage.alt = link.dataset.imageAlt || sourceImage.alt;
     document.querySelector('#image-caption').textContent = enlargedImage.alt;
     document.querySelector('#image-original').href = link.href;
     document.querySelector('#image-status').textContent = '';
     imageStage.classList.remove('is-zoomed');
     zoomButton.setAttribute('aria-pressed', 'false');
-    zoomButton.textContent = 'Zoom in';
+    zoomButton.textContent = t('Zoom in');
     zoomButton.disabled = true;
     enlargedImage.src = link.href;
     imageDialog.showModal();
@@ -125,12 +126,12 @@ document.querySelectorAll('main [data-image]').forEach(link => {
 
 enlargedImage.addEventListener('load', () => { zoomButton.disabled = false; });
 enlargedImage.addEventListener('error', () => {
-  document.querySelector('#image-status').textContent = 'Image could not be loaded. Try opening the original image.';
+  document.querySelector('#image-status').textContent = t('Image could not be loaded. Try opening the original image.');
 });
 zoomButton.addEventListener('click', () => {
   const zoomed = imageStage.classList.toggle('is-zoomed');
   zoomButton.setAttribute('aria-pressed', String(zoomed));
-  zoomButton.textContent = zoomed ? 'Fit image' : 'Zoom in';
+  zoomButton.textContent = zoomed ? t('Fit image') : t('Zoom in');
   imageStage.scrollTo(0, 0);
 });
 document.querySelector('#image-close').addEventListener('click', () => imageDialog.close());
@@ -164,6 +165,6 @@ document.querySelectorAll('[data-copy-email]').forEach(button => {
       selection.remove();
       button.focus({ preventScroll: true });
     }
-    status.textContent = copied ? 'Email copied.' : 'Please select and copy the email address above.';
+    status.textContent = copied ? t('Email copied.') : t('Please select and copy the email address above.');
   });
 });
